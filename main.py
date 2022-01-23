@@ -52,15 +52,15 @@ prompt = Label(text="How many characters will the passord contain?", font=("Cali
 
 
 
-# Create Entry Box To Designate Number of Characters
+# Entry Box for user to enter nr of char
 my_entry = Entry(root, font=("Calibre", 20))
 my_entry.pack(pady=20, padx=20)
 
-# Create Entry Box For Our Returned Password
+# box for returned pass
 return_entry = Entry(root, text="", font=("Calibre", 20), bd=0, bg="systembuttonface")
 return_entry.pack(pady=20)
 
-# Create a frame for our Buttons
+# frame for the buttons
 my_frame = Frame(root)
 my_frame.pack(pady=20)
 
@@ -70,6 +70,8 @@ my_button.grid(row=0, column=0, padx=10)
 
 copy_button = Button(my_frame, text="Copy To Clipboad", command=clipper)
 copy_button.grid(row=0, column=1, padx=10)
+
+# quit button
 
 quit = Button(my_frame, text="Quit", command=root.destroy)
 quit.grid(row=0, column=2, padx=10)
